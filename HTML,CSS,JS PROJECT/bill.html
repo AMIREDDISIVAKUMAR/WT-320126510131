@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bill Generator</title>
+    <link rel="stylesheet" type="text/css" href="bill.css">
+  </head>
+  <body>
+    <div class="container">
+      <hr><h1>Bill Generator</h1><hr>
+      <form>
+        <label for="item">Item:</label><br>
+        <input type="text" id="item" name="item" required><br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" required><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" required><br>
+        <button type="button" onclick="addItem()">Add Item</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="billTable">
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total:</td>
+            <td id="totalAmount"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="bill.js"></script>
+  </body>
+</html>

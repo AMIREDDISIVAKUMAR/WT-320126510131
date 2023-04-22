@@ -1,0 +1,25 @@
+.container {
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+tfoot td {
+  text-align: right;
+  font-weight: bold;
+}
+
+body{
+  background-color: rgb(255, 116, 2);
+}
